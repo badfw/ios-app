@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/SideMenu"]
+	path = Carthage/Checkouts/SideMenu
+	url = https://github.com/jonkykong/SideMenu.git
