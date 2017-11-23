@@ -71,10 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				9D39DE1A1FC65A8F00CE6BE1 /* Extensions */,
+				9D39DE2E1FC75CBD00CE6BE1 /* Assets */,
 				9D3BCFAA1FC656BF00FBD667 /* Panels */,
 				9D37370D1FC6458E00A9C6DA /* AppDelegate.swift */,
-				9D3737161FC6458E00A9C6DA /* Assets.xcassets */,
-				9D3737181FC6458E00A9C6DA /* LaunchScreen.storyboard */,
 				9D37371B1FC6458E00A9C6DA /* Info.plist */,
 			);
 			path = BADFW;
@@ -123,6 +122,15 @@
 			path = "Upcoming Events";
 			sourceTree = "<group>";
 		};
+		9D39DE2E1FC75CBD00CE6BE1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9D3737161FC6458E00A9C6DA /* Assets.xcassets */,
+				9D3737181FC6458E00A9C6DA /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		9D3BCFAA1FC656BF00FBD667 /* Panels */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +149,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D37371E1FC6458E00A9C6DA /* Build configuration list for PBXNativeTarget "BADFW" */;
 			buildPhases = (
+				9D39DE2F1FC7660400CE6BE1 /* ShellScript */,
 				9D3737061FC6458E00A9C6DA /* Sources */,
 				9D3737071FC6458E00A9C6DA /* Frameworks */,
 				9D3737081FC6458E00A9C6DA /* Resources */,
@@ -202,6 +211,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D39DE2F1FC7660400CE6BE1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C $SRCROOT/$PROJECT_NAME/Assets";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D3737061FC6458E00A9C6DA /* Sources */ = {
