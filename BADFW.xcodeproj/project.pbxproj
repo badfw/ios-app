@@ -24,6 +24,7 @@
 		9D3005F0201038A8005DAF53 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005EF201038A8005DAF53 /* libc++.tbd */; };
 		9D3005F2201038D2005DAF53 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005F1201038D2005DAF53 /* StoreKit.framework */; };
 		9D3005F4201038F7005DAF53 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005F3201038F7005DAF53 /* libz.tbd */; };
+		9D3005FB201042B3005DAF53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D3005FA201042B3005DAF53 /* GoogleService-Info.plist */; };
 		9D37370E1FC6458E00A9C6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37370D1FC6458E00A9C6DA /* AppDelegate.swift */; };
 		9D3737171FC6458E00A9C6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3737161FC6458E00A9C6DA /* Assets.xcassets */; };
 		9D37371A1FC6458E00A9C6DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3737181FC6458E00A9C6DA /* LaunchScreen.storyboard */; };
@@ -58,6 +59,8 @@
 		9D3005EF201038A8005DAF53 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		9D3005F1201038D2005DAF53 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9D3005F3201038F7005DAF53 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9D3005F52010408F005DAF53 /* BADFW-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BADFW-Bridging-Header.h"; sourceTree = "<group>"; };
+		9D3005FA201042B3005DAF53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "BADFW/Firebase/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9D37370A1FC6458E00A9C6DA /* BADFW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BADFW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D37370D1FC6458E00A9C6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3737161FC6458E00A9C6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 		9D3005E020103650005DAF53 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				9D3005FA201042B3005DAF53 /* GoogleService-Info.plist */,
 				9D3005E12010366F005DAF53 /* Firebase.h */,
 				9D3005E220103685005DAF53 /* module.modulemap */,
 			);
@@ -138,6 +142,7 @@
 				9D39DE2E1FC75CBD00CE6BE1 /* Assets */,
 				9D3BCFAA1FC656BF00FBD667 /* Panels */,
 				9D37370D1FC6458E00A9C6DA /* AppDelegate.swift */,
+				9D3005F52010408F005DAF53 /* BADFW-Bridging-Header.h */,
 				9D37371B1FC6458E00A9C6DA /* Info.plist */,
 			);
 			path = BADFW;
@@ -256,6 +261,7 @@
 				TargetAttributes = {
 					9D3737091FC6458E00A9C6DA = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -288,6 +294,7 @@
 				9D39DE2B1FC66CDF00CE6BE1 /* UpcomingEventsViewController.storyboard in Resources */,
 				9D3737171FC6458E00A9C6DA /* Assets.xcassets in Resources */,
 				9D39DE1E1FC65AE100CE6BE1 /* SideMenuViewController.storyboard in Resources */,
+				9D3005FB201042B3005DAF53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J49BFWP8H6;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -462,6 +470,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = me.souvik.BADFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BADFW/BADFW-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = $SRCROOT/$PROJECT_NAME/Firebase;
@@ -472,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J49BFWP8H6;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -484,6 +495,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = me.souvik.BADFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BADFW/BADFW-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = $SRCROOT/$PROJECT_NAME/Firebase;
