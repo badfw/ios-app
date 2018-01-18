@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D3005D1201035B9005DAF53 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005D0201035B9005DAF53 /* FirebaseDatabase.framework */; };
+		9D3005D9201035DD005DAF53 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005D2201035DC005DAF53 /* FirebaseAnalytics.framework */; };
+		9D3005DA201035DD005DAF53 /* FirebaseNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005D3201035DC005DAF53 /* FirebaseNanoPB.framework */; };
+		9D3005DB201035DD005DAF53 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005D4201035DD005DAF53 /* nanopb.framework */; };
+		9D3005DC201035DD005DAF53 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005D5201035DD005DAF53 /* FirebaseCoreDiagnostics.framework */; };
+		9D3005DD201035DD005DAF53 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005D6201035DD005DAF53 /* FirebaseCore.framework */; };
+		9D3005DE201035DD005DAF53 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005D7201035DD005DAF53 /* GoogleToolboxForMac.framework */; };
+		9D3005DF201035DD005DAF53 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005D8201035DD005DAF53 /* FirebaseInstanceID.framework */; };
+		9D3005E420103739005DAF53 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005E320103739005DAF53 /* leveldb-library.framework */; };
+		9D3005E620103864005DAF53 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005E520103864005DAF53 /* libicucore.tbd */; };
+		9D3005E82010387D005DAF53 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005E72010387D005DAF53 /* SystemConfiguration.framework */; };
+		9D3005EA20103889005DAF53 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005E920103888005DAF53 /* libsqlite3.tbd */; };
+		9D3005EC20103890005DAF53 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005EB20103890005DAF53 /* CFNetwork.framework */; };
+		9D3005EE2010389A005DAF53 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005ED2010389A005DAF53 /* Security.framework */; };
+		9D3005F0201038A8005DAF53 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005EF201038A8005DAF53 /* libc++.tbd */; };
+		9D3005F2201038D2005DAF53 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005F1201038D2005DAF53 /* StoreKit.framework */; };
+		9D3005F4201038F7005DAF53 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005F3201038F7005DAF53 /* libz.tbd */; };
 		9D37370E1FC6458E00A9C6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37370D1FC6458E00A9C6DA /* AppDelegate.swift */; };
 		9D3737171FC6458E00A9C6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3737161FC6458E00A9C6DA /* Assets.xcassets */; };
 		9D37371A1FC6458E00A9C6DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3737181FC6458E00A9C6DA /* LaunchScreen.storyboard */; };
@@ -22,6 +39,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D3005D0201035B9005DAF53 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = BADFW/Firebase/Database/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		9D3005D2201035DC005DAF53 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = BADFW/Firebase/Analytics/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		9D3005D3201035DC005DAF53 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = BADFW/Firebase/Analytics/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		9D3005D4201035DD005DAF53 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = BADFW/Firebase/Analytics/nanopb.framework; sourceTree = "<group>"; };
+		9D3005D5201035DD005DAF53 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = BADFW/Firebase/Analytics/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		9D3005D6201035DD005DAF53 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = BADFW/Firebase/Analytics/FirebaseCore.framework; sourceTree = "<group>"; };
+		9D3005D7201035DD005DAF53 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = BADFW/Firebase/Analytics/GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		9D3005D8201035DD005DAF53 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = BADFW/Firebase/Analytics/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		9D3005E12010366F005DAF53 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = BADFW/Firebase/Firebase.h; sourceTree = SOURCE_ROOT; };
+		9D3005E220103685005DAF53 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = BADFW/Firebase/module.modulemap; sourceTree = SOURCE_ROOT; };
+		9D3005E320103739005DAF53 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "leveldb-library.framework"; path = "BADFW/Firebase/Database/leveldb-library.framework"; sourceTree = "<group>"; };
+		9D3005E520103864005DAF53 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		9D3005E72010387D005DAF53 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9D3005E920103888005DAF53 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9D3005EB20103890005DAF53 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9D3005ED2010389A005DAF53 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9D3005EF201038A8005DAF53 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		9D3005F1201038D2005DAF53 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9D3005F3201038F7005DAF53 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		9D37370A1FC6458E00A9C6DA /* BADFW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BADFW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D37370D1FC6458E00A9C6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3737161FC6458E00A9C6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,13 +79,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3005F4201038F7005DAF53 /* libz.tbd in Frameworks */,
+				9D3005F2201038D2005DAF53 /* StoreKit.framework in Frameworks */,
+				9D3005F0201038A8005DAF53 /* libc++.tbd in Frameworks */,
+				9D3005EE2010389A005DAF53 /* Security.framework in Frameworks */,
+				9D3005EC20103890005DAF53 /* CFNetwork.framework in Frameworks */,
+				9D3005EA20103889005DAF53 /* libsqlite3.tbd in Frameworks */,
+				9D3005E82010387D005DAF53 /* SystemConfiguration.framework in Frameworks */,
+				9D3005E620103864005DAF53 /* libicucore.tbd in Frameworks */,
+				9D3005D1201035B9005DAF53 /* FirebaseDatabase.framework in Frameworks */,
 				9D37372E1FC64C8400A9C6DA /* SideMenu.framework in Frameworks */,
+				9D3005DB201035DD005DAF53 /* nanopb.framework in Frameworks */,
+				9D3005DC201035DD005DAF53 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				9D3005DF201035DD005DAF53 /* FirebaseInstanceID.framework in Frameworks */,
+				9D3005DD201035DD005DAF53 /* FirebaseCore.framework in Frameworks */,
+				9D3005DE201035DD005DAF53 /* GoogleToolboxForMac.framework in Frameworks */,
+				9D3005D9201035DD005DAF53 /* FirebaseAnalytics.framework in Frameworks */,
+				9D3005DA201035DD005DAF53 /* FirebaseNanoPB.framework in Frameworks */,
+				9D3005E420103739005DAF53 /* leveldb-library.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D3005E020103650005DAF53 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				9D3005E12010366F005DAF53 /* Firebase.h */,
+				9D3005E220103685005DAF53 /* module.modulemap */,
+			);
+			name = Firebase;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		9D3737011FC6458D00A9C6DA = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +133,7 @@
 		9D37370C1FC6458E00A9C6DA /* BADFW */ = {
 			isa = PBXGroup;
 			children = (
+				9D3005E020103650005DAF53 /* Firebase */,
 				9D39DE1A1FC65A8F00CE6BE1 /* Extensions */,
 				9D39DE2E1FC75CBD00CE6BE1 /* Assets */,
 				9D3BCFAA1FC656BF00FBD667 /* Panels */,
@@ -82,7 +146,24 @@
 		9D37372D1FC64C8400A9C6DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D3005F3201038F7005DAF53 /* libz.tbd */,
+				9D3005F1201038D2005DAF53 /* StoreKit.framework */,
+				9D3005EF201038A8005DAF53 /* libc++.tbd */,
+				9D3005ED2010389A005DAF53 /* Security.framework */,
+				9D3005EB20103890005DAF53 /* CFNetwork.framework */,
+				9D3005E920103888005DAF53 /* libsqlite3.tbd */,
+				9D3005E72010387D005DAF53 /* SystemConfiguration.framework */,
+				9D3005E520103864005DAF53 /* libicucore.tbd */,
+				9D3005E320103739005DAF53 /* leveldb-library.framework */,
 				9D37372F1FC64C8400A9C6DA /* SideMenu.framework */,
+				9D3005D2201035DC005DAF53 /* FirebaseAnalytics.framework */,
+				9D3005D6201035DD005DAF53 /* FirebaseCore.framework */,
+				9D3005D5201035DD005DAF53 /* FirebaseCoreDiagnostics.framework */,
+				9D3005D8201035DD005DAF53 /* FirebaseInstanceID.framework */,
+				9D3005D3201035DC005DAF53 /* FirebaseNanoPB.framework */,
+				9D3005D7201035DD005DAF53 /* GoogleToolboxForMac.framework */,
+				9D3005D4201035DD005DAF53 /* nanopb.framework */,
+				9D3005D0201035B9005DAF53 /* FirebaseDatabase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -307,6 +388,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -357,6 +439,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -369,12 +452,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J49BFWP8H6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BADFW/Firebase/Database",
+					"$(PROJECT_DIR)/BADFW/Firebase/Analytics",
+				);
 				INFOPLIST_FILE = BADFW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = me.souvik.BADFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = $SRCROOT/$PROJECT_NAME/Firebase;
 			};
 			name = Debug;
 		};
@@ -384,12 +474,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J49BFWP8H6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BADFW/Firebase/Database",
+					"$(PROJECT_DIR)/BADFW/Firebase/Analytics",
+				);
 				INFOPLIST_FILE = BADFW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = me.souvik.BADFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = $SRCROOT/$PROJECT_NAME/Firebase;
 			};
 			name = Release;
 		};
