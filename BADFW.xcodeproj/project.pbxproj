@@ -25,6 +25,8 @@
 		9D3005F2201038D2005DAF53 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005F1201038D2005DAF53 /* StoreKit.framework */; };
 		9D3005F4201038F7005DAF53 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3005F3201038F7005DAF53 /* libz.tbd */; };
 		9D3005FB201042B3005DAF53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D3005FA201042B3005DAF53 /* GoogleService-Info.plist */; };
+		9D300602201047A6005DAF53 /* AnnouncementsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D300601201047A6005DAF53 /* AnnouncementsViewController.storyboard */; };
+		9D300604201047B7005DAF53 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D300603201047B7005DAF53 /* AnnouncementsViewController.swift */; };
 		9D37370E1FC6458E00A9C6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37370D1FC6458E00A9C6DA /* AppDelegate.swift */; };
 		9D3737171FC6458E00A9C6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3737161FC6458E00A9C6DA /* Assets.xcassets */; };
 		9D37371A1FC6458E00A9C6DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3737181FC6458E00A9C6DA /* LaunchScreen.storyboard */; };
@@ -37,6 +39,9 @@
 		9D39DE281FC66B0000CE6BE1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D39DE271FC66B0000CE6BE1 /* WelcomeViewController.swift */; };
 		9D39DE2B1FC66CDF00CE6BE1 /* UpcomingEventsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D39DE2A1FC66CDF00CE6BE1 /* UpcomingEventsViewController.storyboard */; };
 		9D39DE2D1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D39DE2C1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift */; };
+		9D44B20D20142E5D00D8F452 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D44B20C20142E5D00D8F452 /* UIViewExtensions.swift */; };
+		9D6631FD201049A80088C92F /* AnnouncementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D6631FC201049A80088C92F /* AnnouncementTableViewCell.xib */; };
+		9D6631FF201049BF0088C92F /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6631FE201049BF0088C92F /* AnnouncementTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +66,8 @@
 		9D3005F3201038F7005DAF53 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		9D3005F52010408F005DAF53 /* BADFW-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BADFW-Bridging-Header.h"; sourceTree = "<group>"; };
 		9D3005FA201042B3005DAF53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "BADFW/Firebase/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9D300601201047A6005DAF53 /* AnnouncementsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AnnouncementsViewController.storyboard; sourceTree = "<group>"; };
+		9D300603201047B7005DAF53 /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
 		9D37370A1FC6458E00A9C6DA /* BADFW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BADFW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D37370D1FC6458E00A9C6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3737161FC6458E00A9C6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +82,9 @@
 		9D39DE271FC66B0000CE6BE1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		9D39DE2A1FC66CDF00CE6BE1 /* UpcomingEventsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpcomingEventsViewController.storyboard; sourceTree = "<group>"; };
 		9D39DE2C1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsViewController.swift; sourceTree = "<group>"; };
+		9D44B20C20142E5D00D8F452 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		9D6631FC201049A80088C92F /* AnnouncementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementTableViewCell.xib; sourceTree = "<group>"; };
+		9D6631FE201049BF0088C92F /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,17 @@
 			);
 			name = Firebase;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9D3006002010478C005DAF53 /* Announcements */ = {
+			isa = PBXGroup;
+			children = (
+				9D300601201047A6005DAF53 /* AnnouncementsViewController.storyboard */,
+				9D300603201047B7005DAF53 /* AnnouncementsViewController.swift */,
+				9D6631FE201049BF0088C92F /* AnnouncementTableViewCell.swift */,
+				9D6631FC201049A80088C92F /* AnnouncementTableViewCell.xib */,
+			);
+			path = Announcements;
 			sourceTree = "<group>";
 		};
 		9D3737011FC6458D00A9C6DA = {
@@ -177,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				9D39DE1B1FC65AB100CE6BE1 /* UIViewControllerExtensions.swift */,
+				9D44B20C20142E5D00D8F452 /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -184,6 +206,7 @@
 		9D39DE231FC66A3600CE6BE1 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				9D3006002010478C005DAF53 /* Announcements */,
 				9D39DE241FC66A4C00CE6BE1 /* WelcomeViewController.storyboard */,
 				9D39DE271FC66B0000CE6BE1 /* WelcomeViewController.swift */,
 			);
@@ -293,8 +316,10 @@
 				9D37371A1FC6458E00A9C6DA /* LaunchScreen.storyboard in Resources */,
 				9D39DE2B1FC66CDF00CE6BE1 /* UpcomingEventsViewController.storyboard in Resources */,
 				9D3737171FC6458E00A9C6DA /* Assets.xcassets in Resources */,
+				9D6631FD201049A80088C92F /* AnnouncementTableViewCell.xib in Resources */,
 				9D39DE1E1FC65AE100CE6BE1 /* SideMenuViewController.storyboard in Resources */,
 				9D3005FB201042B3005DAF53 /* GoogleService-Info.plist in Resources */,
+				9D300602201047A6005DAF53 /* AnnouncementsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,11 +346,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6631FF201049BF0088C92F /* AnnouncementTableViewCell.swift in Sources */,
+				9D300604201047B7005DAF53 /* AnnouncementsViewController.swift in Sources */,
 				9D39DE201FC65B0100CE6BE1 /* SideMenuViewController.swift in Sources */,
 				9D39DE2D1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift in Sources */,
 				9D39DE281FC66B0000CE6BE1 /* WelcomeViewController.swift in Sources */,
 				9D39DE221FC6695700CE6BE1 /* BasePanelViewController.swift in Sources */,
 				9D39DE1C1FC65AB100CE6BE1 /* UIViewControllerExtensions.swift in Sources */,
+				9D44B20D20142E5D00D8F452 /* UIViewExtensions.swift in Sources */,
 				9D37370E1FC6458E00A9C6DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
