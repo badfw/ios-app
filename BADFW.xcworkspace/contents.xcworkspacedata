@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Carthage/Checkouts/Chameleon/Chameleon.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Carthage/Checkouts/SideMenu/SideMenu.xcodeproj">
    </FileRef>
    <FileRef
