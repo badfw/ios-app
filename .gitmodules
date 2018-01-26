@@ -4,3 +4,6 @@
 [submodule "Carthage/Checkouts/Chameleon"]
 	path = Carthage/Checkouts/Chameleon
 	url = https://github.com/ViccAlexander/Chameleon.git
+[submodule "Carthage/Checkouts/JTAppleCalendar"]
+	path = Carthage/Checkouts/JTAppleCalendar
+	url = https://github.com/patchthecode/JTAppleCalendar.git
