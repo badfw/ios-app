@@ -8,12 +8,15 @@
 
 import Foundation
 import UIKit
+import Chameleon
 
 @IBDesignable class AnnouncementTableViewCell : UITableViewCell {
     public static let reuseIdentifier = "AnnouncementTableViewCell"
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var mainBackground: UIView!
+    @IBOutlet weak var shadowLayer: UIView!
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         self._minimized = false
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -25,7 +28,14 @@ import UIKit
     }
 
     override func awakeFromNib() {
-
+        self.mainBackground.backgroundColor = FlatRed()
+        self.mainBackground.layer.cornerRadius = 8
+        self.mainBackground.layer.masksToBounds = true
+        self.shadowLayer.layer.masksToBounds = false
+        self.shadowLayer.layer.shadowOffset = CGSize.init(width: 0, height: 0)
+        self.shadowLayer.layer.shadowColor = UIColor.black.cgColor
+        self.shadowLayer.layer.shadowOpacity = 0.23
+        self.shadowLayer.layer.shadowRadius = 4
     }
 
     var _minimized: Bool = false
@@ -72,5 +82,23 @@ import UIKit
             _descriptionText = newValue
             descriptionLabel.text = newValue
         }
+    }
+}
+
+class AnnouncementTableViewCellShadowView : UIView {
+    override var bounds: CGRect {
+        didSet {
+            setupShadow()
+        }
+    }
+
+    private func setupShadow() {
+        self.layer.cornerRadius = 8
+        self.layer.shadowOffset = CGSize(width: 0, height: 3)
+        self.layer.shadowRadius = 3
+        self.layer.shadowOpacity = 0.3
+        self.layer.shadowPath = UIBezierPath.init(roundedRect: self.bounds, byRoundingCorners: .allCorners, cornerRadii: CGSize(width: 8, height: 8)).cgPath
+        self.layer.shouldRasterize = true
+        self.layer.rasterizationScale = UIScreen.main.scale
     }
 }

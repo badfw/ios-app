@@ -19,40 +19,64 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="184.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBy-K8-vz4">
-                        <rect key="frame" x="16" y="11" width="343" height="31.5"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJ0-K5-ENE">
-                        <rect key="frame" x="16" y="50.5" width="343" height="24"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xS-RL-EQV" userLabel="Description">
-                        <rect key="frame" x="16" y="82.5" width="343" height="91.5"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdI-kY-01H" customClass="AnnouncementTableViewCellShadowView" customModule="BADFW" customModuleProvider="target">
+                        <rect key="frame" x="16" y="16" width="343" height="152.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hmu-n7-Hgt">
+                        <rect key="frame" x="16" y="16" width="343" height="152.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBy-K8-vz4">
+                                <rect key="frame" x="8" y="8" width="327" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xS-RL-EQV" userLabel="Description">
+                                <rect key="frame" x="8" y="79.5" width="327" height="65"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJ0-K5-ENE">
+                                <rect key="frame" x="8" y="47.5" width="327" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EJ0-K5-ENE" firstAttribute="leading" secondItem="iBy-K8-vz4" secondAttribute="leading" id="0Qo-CT-Lgp"/>
+                            <constraint firstItem="2xS-RL-EQV" firstAttribute="trailing" secondItem="EJ0-K5-ENE" secondAttribute="trailing" id="A5e-Fz-wYF"/>
+                            <constraint firstItem="EJ0-K5-ENE" firstAttribute="top" secondItem="iBy-K8-vz4" secondAttribute="bottom" constant="8" id="H6c-QG-ke1"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2xS-RL-EQV" secondAttribute="bottom" id="Iag-Gl-nZQ"/>
+                            <constraint firstItem="EJ0-K5-ENE" firstAttribute="trailing" secondItem="iBy-K8-vz4" secondAttribute="trailing" id="Je7-rr-pLq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iBy-K8-vz4" secondAttribute="trailing" id="Kds-Dk-6k5"/>
+                            <constraint firstItem="2xS-RL-EQV" firstAttribute="leading" secondItem="EJ0-K5-ENE" secondAttribute="leading" id="QtR-Bi-7zf"/>
+                            <constraint firstItem="2xS-RL-EQV" firstAttribute="top" secondItem="EJ0-K5-ENE" secondAttribute="bottom" constant="8" id="kkG-aB-ccx"/>
+                            <constraint firstAttribute="topMargin" secondItem="iBy-K8-vz4" secondAttribute="top" id="ozF-Sm-KlM"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="iBy-K8-vz4" secondAttribute="leading" id="tIq-F4-8vf"/>
+                        </constraints>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="iBy-K8-vz4" firstAttribute="trailing" secondItem="KdU-1J-luu" secondAttribute="trailingMargin" id="IvE-tu-Eq3"/>
-                    <constraint firstItem="2xS-RL-EQV" firstAttribute="top" secondItem="EJ0-K5-ENE" secondAttribute="bottom" constant="8" id="Jbo-I9-hf5"/>
-                    <constraint firstItem="iBy-K8-vz4" firstAttribute="top" secondItem="KdU-1J-luu" secondAttribute="topMargin" id="KtL-H7-LMW"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="2xS-RL-EQV" secondAttribute="bottom" id="QIb-Ow-Qun"/>
-                    <constraint firstItem="EJ0-K5-ENE" firstAttribute="leading" secondItem="KdU-1J-luu" secondAttribute="leadingMargin" id="d2u-Wm-h5s"/>
-                    <constraint firstItem="iBy-K8-vz4" firstAttribute="leading" secondItem="KdU-1J-luu" secondAttribute="leadingMargin" id="kxX-H7-GuY"/>
-                    <constraint firstItem="2xS-RL-EQV" firstAttribute="trailing" secondItem="KdU-1J-luu" secondAttribute="trailingMargin" id="meJ-qu-oDE"/>
-                    <constraint firstItem="EJ0-K5-ENE" firstAttribute="top" secondItem="iBy-K8-vz4" secondAttribute="bottom" constant="8" id="pzU-zK-s0U"/>
-                    <constraint firstItem="EJ0-K5-ENE" firstAttribute="trailing" secondItem="KdU-1J-luu" secondAttribute="trailingMargin" id="vu4-Qd-Far"/>
-                    <constraint firstItem="2xS-RL-EQV" firstAttribute="leading" secondItem="KdU-1J-luu" secondAttribute="leadingMargin" id="wyy-9I-JdO"/>
+                    <constraint firstItem="AdI-kY-01H" firstAttribute="bottom" secondItem="Hmu-n7-Hgt" secondAttribute="bottom" id="8bW-IV-Cfe"/>
+                    <constraint firstAttribute="trailing" secondItem="Hmu-n7-Hgt" secondAttribute="trailing" constant="16" id="Ka4-Jq-NTw"/>
+                    <constraint firstItem="AdI-kY-01H" firstAttribute="trailing" secondItem="Hmu-n7-Hgt" secondAttribute="trailing" id="NIi-hI-v48"/>
+                    <constraint firstItem="Hmu-n7-Hgt" firstAttribute="leading" secondItem="KdU-1J-luu" secondAttribute="leading" constant="16" id="Sr1-Bj-MlE"/>
+                    <constraint firstItem="AdI-kY-01H" firstAttribute="top" secondItem="Hmu-n7-Hgt" secondAttribute="top" id="Y7A-2b-g1x"/>
+                    <constraint firstAttribute="bottom" secondItem="Hmu-n7-Hgt" secondAttribute="bottom" constant="16" id="jTI-5x-KUb"/>
+                    <constraint firstItem="Hmu-n7-Hgt" firstAttribute="top" secondItem="KdU-1J-luu" secondAttribute="top" constant="16" id="lRL-O4-hsn"/>
+                    <constraint firstItem="AdI-kY-01H" firstAttribute="leading" secondItem="Hmu-n7-Hgt" secondAttribute="leading" id="uMr-ul-EYZ"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="descriptionLabel" destination="2xS-RL-EQV" id="CBz-8t-FKb"/>
+                <outlet property="mainBackground" destination="Hmu-n7-Hgt" id="vB5-cl-9tD"/>
+                <outlet property="shadowLayer" destination="AdI-kY-01H" id="Qhm-h2-GA2"/>
                 <outlet property="subtitleLabel" destination="EJ0-K5-ENE" id="CBY-Hs-tQ5"/>
                 <outlet property="titleLabel" destination="iBy-K8-vz4" id="SHR-3z-7lZ"/>
             </connections>

@@ -8,13 +8,14 @@
 
 import Foundation
 import UIKit
+import Chameleon
 
 class SideMenuViewController : UITableViewController {
     // TODO: improve design, replace the header view with something more meaningful
     var associatedNavigationController : UINavigationController?
     var welcomeViewController: WelcomeViewController?
     var upcomingEventsViewController: UpcomingEventsViewController?
-    
+
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }

@@ -9,6 +9,7 @@
 import UIKit
 import SideMenu
 import Firebase
+import Chameleon
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -34,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             SideMenuManager.default.menuPresentMode = .viewSlideInOut
             SideMenuManager.default.menuBlurEffectStyle = .light
              */
+            Chameleon.setGlobalThemeUsingPrimaryColor(FlatOrange(), withSecondaryColor: FlatRed(), andContentStyle: .light)
             window.makeKeyAndVisible()
         }
         FirebaseApp.configure()

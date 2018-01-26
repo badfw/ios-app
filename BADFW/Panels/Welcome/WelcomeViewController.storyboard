@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,17 +20,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Pz-HW-zko">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="447"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="RYv-GF-qAM" kind="embed" id="EBy-W5-aWV"/>
                                 </connections>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJg-sF-ncK">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="95b-bf-nPc" firstAttribute="bottom" secondItem="4Pz-HW-zko" secondAttribute="bottom" id="D4r-MM-2cG"/>
+                            <constraint firstItem="95b-bf-nPc" firstAttribute="bottom" secondItem="OJg-sF-ncK" secondAttribute="bottom" id="E4s-mG-5bu"/>
+                            <constraint firstItem="95b-bf-nPc" firstAttribute="trailing" secondItem="OJg-sF-ncK" secondAttribute="trailing" id="P1V-No-NaK"/>
                             <constraint firstItem="4Pz-HW-zko" firstAttribute="leading" secondItem="95b-bf-nPc" secondAttribute="leading" id="WEl-nV-DMO"/>
+                            <constraint firstItem="OJg-sF-ncK" firstAttribute="leading" secondItem="95b-bf-nPc" secondAttribute="leading" id="XJk-89-MQ8"/>
                             <constraint firstItem="4Pz-HW-zko" firstAttribute="top" secondItem="95b-bf-nPc" secondAttribute="top" id="dB2-y2-HoY"/>
+                            <constraint firstItem="OJg-sF-ncK" firstAttribute="height" secondItem="IVg-Ze-qdo" secondAttribute="height" multiplier="0.3" id="mQZ-fX-fmH"/>
+                            <constraint firstItem="OJg-sF-ncK" firstAttribute="top" secondItem="4Pz-HW-zko" secondAttribute="bottom" id="r2D-dy-vQj"/>
                             <constraint firstItem="95b-bf-nPc" firstAttribute="trailing" secondItem="4Pz-HW-zko" secondAttribute="trailing" id="uqu-Cz-d1a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="95b-bf-nPc"/>
