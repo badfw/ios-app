@@ -29,6 +29,8 @@
 		9D300604201047B7005DAF53 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D300603201047B7005DAF53 /* AnnouncementsViewController.swift */; };
 		9D3230DE201579ED00A567F9 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3230DF201579ED00A567F9 /* Chameleon.framework */; };
 		9D3230F8201ADF4600A567F9 /* JTAppleCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3230F9201ADF4600A567F9 /* JTAppleCalendar.framework */; };
+		9D3230FD201AEAB700A567F9 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D3230FC201AEAB700A567F9 /* CalendarCell.xib */; };
+		9D3230FF201AEAE900A567F9 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3230FE201AEAE900A567F9 /* CalendarCell.swift */; };
 		9D37370E1FC6458E00A9C6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37370D1FC6458E00A9C6DA /* AppDelegate.swift */; };
 		9D3737171FC6458E00A9C6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3737161FC6458E00A9C6DA /* Assets.xcassets */; };
 		9D37371A1FC6458E00A9C6DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3737181FC6458E00A9C6DA /* LaunchScreen.storyboard */; };
@@ -72,6 +74,8 @@
 		9D300603201047B7005DAF53 /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
 		9D3230DF201579ED00A567F9 /* Chameleon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Chameleon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3230F9201ADF4600A567F9 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3230FC201AEAB700A567F9 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
+		9D3230FE201AEAE900A567F9 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		9D37370A1FC6458E00A9C6DA /* BADFW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BADFW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D37370D1FC6458E00A9C6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3737161FC6458E00A9C6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -235,6 +239,8 @@
 			children = (
 				9D39DE2A1FC66CDF00CE6BE1 /* UpcomingEventsViewController.storyboard */,
 				9D39DE2C1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift */,
+				9D3230FC201AEAB700A567F9 /* CalendarCell.xib */,
+				9D3230FE201AEAE900A567F9 /* CalendarCell.swift */,
 			);
 			path = "Upcoming Events";
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 			files = (
 				9D39DE251FC66A4C00CE6BE1 /* WelcomeViewController.storyboard in Resources */,
 				9D37371A1FC6458E00A9C6DA /* LaunchScreen.storyboard in Resources */,
+				9D3230FD201AEAB700A567F9 /* CalendarCell.xib in Resources */,
 				9D39DE2B1FC66CDF00CE6BE1 /* UpcomingEventsViewController.storyboard in Resources */,
 				9D3737171FC6458E00A9C6DA /* Assets.xcassets in Resources */,
 				9D6631FD201049A80088C92F /* AnnouncementTableViewCell.xib in Resources */,
@@ -363,6 +370,7 @@
 				9D39DE1C1FC65AB100CE6BE1 /* UIViewControllerExtensions.swift in Sources */,
 				9D44B20D20142E5D00D8F452 /* UIViewExtensions.swift in Sources */,
 				9D37370E1FC6458E00A9C6DA /* AppDelegate.swift in Sources */,
+				9D3230FF201AEAE900A567F9 /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
