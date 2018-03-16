@@ -44,6 +44,7 @@
 		9D39DE2B1FC66CDF00CE6BE1 /* UpcomingEventsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D39DE2A1FC66CDF00CE6BE1 /* UpcomingEventsViewController.storyboard */; };
 		9D39DE2D1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D39DE2C1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift */; };
 		9D44B20D20142E5D00D8F452 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D44B20C20142E5D00D8F452 /* UIViewExtensions.swift */; };
+		9D452263205C325000ACDC56 /* iCalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D452264205C325000ACDC56 /* iCalKit.framework */; };
 		9D6631FD201049A80088C92F /* AnnouncementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D6631FC201049A80088C92F /* AnnouncementTableViewCell.xib */; };
 		9D6631FF201049BF0088C92F /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6631FE201049BF0088C92F /* AnnouncementTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 		9D39DE2A1FC66CDF00CE6BE1 /* UpcomingEventsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpcomingEventsViewController.storyboard; sourceTree = "<group>"; };
 		9D39DE2C1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsViewController.swift; sourceTree = "<group>"; };
 		9D44B20C20142E5D00D8F452 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		9D452264205C325000ACDC56 /* iCalKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iCalKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6631FC201049A80088C92F /* AnnouncementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementTableViewCell.xib; sourceTree = "<group>"; };
 		9D6631FE201049BF0088C92F /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D452263205C325000ACDC56 /* iCalKit.framework in Frameworks */,
 				9D3230F8201ADF4600A567F9 /* JTAppleCalendar.framework in Frameworks */,
 				9D3230DE201579ED00A567F9 /* Chameleon.framework in Frameworks */,
 				9D3005F4201038F7005DAF53 /* libz.tbd in Frameworks */,
@@ -182,6 +185,7 @@
 		9D37372D1FC64C8400A9C6DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D452264205C325000ACDC56 /* iCalKit.framework */,
 				9D3230F9201ADF4600A567F9 /* JTAppleCalendar.framework */,
 				9D3230DF201579ED00A567F9 /* Chameleon.framework */,
 				9D3005F3201038F7005DAF53 /* libz.tbd */,

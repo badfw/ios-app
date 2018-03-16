@@ -8,6 +8,9 @@
       location = "group:Carthage/Checkouts/Chameleon/Chameleon.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Carthage/Checkouts/iCalKit/iCalKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Carthage/Checkouts/SideMenu/SideMenu.xcodeproj">
    </FileRef>
    <FileRef
