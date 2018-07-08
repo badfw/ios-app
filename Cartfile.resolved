@@ -1,3 +1,4 @@
-github "ViccAlexander/Chameleon" "db432ca1b1a3d8f83ee1f881208c0c960a325e73"
-github "jonkykong/SideMenu" "85730455258e522779a2661b42cb39af64d9b714"
+github "Alamofire/Alamofire" "4.7.2"
+github "jonkykong/SideMenu" "83f8e461e103d2caacb328c3050fcbb4980cbc83"
+github "kiliankoe/iCalKit" "35bff55392b022dfd73358bf7c466cde643f5474"
 github "patchthecode/JTAppleCalendar" "7.1.5"

@@ -8,10 +8,9 @@
 
 import Foundation
 import UIKit
-import Chameleon
 
 class WelcomeViewController : BasePanelViewController {
     override func viewWillAppear(_ animated: Bool) {
-        self.view.backgroundColor = FlatYellow()
+        
     }
 }

@@ -8,13 +8,13 @@
 
 import Foundation
 import UIKit
-import Chameleon
 
 class SideMenuViewController : UITableViewController {
     // TODO: improve design, replace the header view with something more meaningful
     var associatedNavigationController : UINavigationController?
     var welcomeViewController: WelcomeViewController?
     var upcomingEventsViewController: UpcomingEventsViewController?
+    var adminViewController: AdminViewController?
 
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
@@ -34,6 +34,10 @@ class SideMenuViewController : UITableViewController {
                     self.associatedNavigationController?.setViewControllers([self.welcomeViewController!], animated: false)
                 case 1: // Upcoming Events
                     self.associatedNavigationController?.setViewControllers([self.upcomingEventsViewController!], animated: false)
+                case 2: // Contact
+                    print("Contact unimplemented")
+                case 3:
+                    self.associatedNavigationController?.setViewControllers([self.adminViewController!], animated: false)
                 default:
                     NSLog("Invalid case")
                 }

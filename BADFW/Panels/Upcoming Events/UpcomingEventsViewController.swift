@@ -8,56 +8,68 @@
 
 import Foundation
 import UIKit
-import JTAppleCalendar
+import Alamofire
+import iCalKit
 
-class UpcomingEventsViewController : BasePanelViewController, JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource {
-    let cellNib = UINib.init(nibName: "CalendarCell", bundle: Bundle.main)
-    @IBOutlet weak var calendarView: JTAppleCalendarView!
-    func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
-        let cell = cell as! CalendarCell
-        let day: String = {
-            let components = Calendar.current.dateComponents(Set([Calendar.Component.day]), from: date)
-            return String(components.day!)
-        }()
-        let dayOfWeek: String = {
-            let formatter = DateFormatter.init()
-            formatter.dateFormat = "EEE"
-            return formatter.string(from: date)
-        }()
-        cell.day = day
-        cell.dayOfWeek = dayOfWeek
-    }
+class UpcomingEventsViewController : BasePanelViewController, UITableViewDelegate, UITableViewDataSource  {
 
-    func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
-        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: CalendarCell.reuseIdentifier, for: indexPath) as! CalendarCell
-        let day: String = {
-            let components = Calendar.current.dateComponents(Set([Calendar.Component.day]), from: date)
-            return String(components.day!)
-        }()
-        let dayOfWeek: String = {
-            let formatter = DateFormatter.init()
-            formatter.dateFormat = "EEE"
-            return formatter.string(from: date)
-        }()
-        cell.day = day
-        cell.dayOfWeek = dayOfWeek
-        return cell
-    }
+    @IBOutlet weak var tableView: UITableView!
 
-    func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
-        let start = Date.init()
-        let end: Date = {
-            var components = DateComponents.init()
-            components.day = 5
-            return Calendar.current.date(byAdding: components, to: start)!
-        }()
-        return ConfigurationParameters.init(startDate: start, endDate: end, numberOfRows: 1, calendar: nil, generateInDates: nil, generateOutDates: nil, firstDayOfWeek: DaysOfWeek.friday, hasStrictBoundaries: true)
+    let cellNib = UINib.init(nibName: "EventTableViewCell", bundle: Bundle.main)
+
+    var events: [iCalKit.Event] = []
+
+    override func awakeFromNib() {
+        let calendarURL = "https://calendar.google.com/calendar/ical/mohhticvbkm0fi384ijao0djmc%40group.calendar.google.com/public/basic.ics"
+        Alamofire.request(calendarURL).responseString { (response) in
+            guard let icalString = response.result.value else {
+                NSLog("Failed to download ical as string")
+                return
+            }
+            let icalStringTrimmed = icalString.components(separatedBy: .whitespacesAndNewlines).compactMap({ (s) -> String? in
+                if s.isEmpty {
+                    return nil
+                } else {
+                    return s
+                }
+            }).joined(separator: "\n")
+            let calendar = iCal.load(string: icalStringTrimmed)
+            self.events = calendar.flatMap({ (c) -> [iCalKit.Event] in
+                c.subComponents.compactMap { (cc) -> iCalKit.Event? in
+                    cc as? iCalKit.Event
+                }
+            })
+            self.tableView?.reloadData()
+        }
     }
 
     override func viewDidLoad() {
-        self.calendarView.register(self.cellNib, forCellWithReuseIdentifier: CalendarCell.reuseIdentifier)
         super.viewDidLoad()
+        self.tableView.register(self.cellNib, forCellReuseIdentifier: EventTableViewCell.reuseIdentifier)
+        self.tableView.reloadData()
     }
 
-    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = (self.tableView.dequeueReusableCell(withIdentifier: EventTableViewCell.reuseIdentifier) as? EventTableViewCell) ?? EventTableViewCell.instantiateFromNib()
+        let event = self.events[indexPath.row]
+        cell.title = event.summary ?? "ERROR: no summary"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd HH:mm:ss"
+        if let dtstart = event.dtstart, let dtend = event.dtend {
+            cell.subtitle = "\(dateFormatter.string(from: dtstart))-\(dateFormatter.string(from: dtend))"
+        } else {
+            cell.subtitle = "\(dateFormatter.string(from: event.dtstamp))"
+        }
+        cell.descriptionText = event.descr ?? ""
+
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return self.events.count
+        } else {
+            return 0
+        }
+    }
 }

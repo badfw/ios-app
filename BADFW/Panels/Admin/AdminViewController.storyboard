@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Admin View Controller-->
+        <scene sceneID="jEU-kG-wkK">
+            <objects>
+                <viewController storyboardIdentifier="AdminViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uHx-cc-E1Z" customClass="AdminViewController" customModule="BADFW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dmJ-F4-A2b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prQ-P3-UKt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ke3-d4-V1Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="611"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwm-cd-R8V">
+                                        <rect key="frame" x="95.5" y="611" width="183" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="Send Announcement"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="uHx-cc-E1Z" eventType="touchUpInside" id="Zai-iW-1kI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ke3-d4-V1Z" firstAttribute="leading" secondItem="prQ-P3-UKt" secondAttribute="leading" id="8Pj-aT-2cX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zwm-cd-R8V" secondAttribute="bottom" id="8VV-Mo-SZ7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ke3-d4-V1Z" secondAttribute="trailing" id="O3l-aI-YgP"/>
+                                    <constraint firstItem="Zwm-cd-R8V" firstAttribute="centerX" secondItem="prQ-P3-UKt" secondAttribute="centerX" id="U6x-zl-540"/>
+                                    <constraint firstItem="Zwm-cd-R8V" firstAttribute="top" secondItem="Ke3-d4-V1Z" secondAttribute="bottom" id="UMw-LK-8Qr"/>
+                                    <constraint firstItem="Ke3-d4-V1Z" firstAttribute="top" secondItem="prQ-P3-UKt" secondAttribute="top" id="fTi-fP-DCC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="prQ-P3-UKt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iSO-Y1-WW0" secondAttribute="top" id="7F7-vK-YBx"/>
+                            <constraint firstItem="prQ-P3-UKt" firstAttribute="centerX" secondItem="iSO-Y1-WW0" secondAttribute="centerX" id="A7j-Bp-3yf"/>
+                            <constraint firstItem="prQ-P3-UKt" firstAttribute="width" secondItem="iSO-Y1-WW0" secondAttribute="width" id="Npi-2d-sfJ"/>
+                            <constraint firstItem="prQ-P3-UKt" firstAttribute="top" secondItem="iSO-Y1-WW0" secondAttribute="top" id="QNP-3U-Vfe"/>
+                            <constraint firstItem="prQ-P3-UKt" firstAttribute="bottom" secondItem="iSO-Y1-WW0" secondAttribute="bottom" id="s9Q-hx-HM9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iSO-Y1-WW0"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="s9Q-hx-HM9" id="lH1-Ib-WLU"/>
+                        <outlet property="sendButton" destination="Zwm-cd-R8V" id="iwm-ia-C8d"/>
+                        <outlet property="textView" destination="Ke3-d4-V1Z" id="pDz-o1-OSM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4d-zj-geD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="258.62068965517244"/>
+        </scene>
+    </scenes>
+</document>

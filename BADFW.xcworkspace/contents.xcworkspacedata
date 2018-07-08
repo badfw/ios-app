@@ -5,13 +5,13 @@
       location = "group:Carthage/Checkouts/JTAppleCalendar/JTAppleCalendar.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Carthage/Checkouts/Chameleon/Chameleon.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Carthage/Checkouts/iCalKit/iCalKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Carthage/Checkouts/SideMenu/SideMenu.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/Alamofire/Alamofire.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:BADFW.xcodeproj">

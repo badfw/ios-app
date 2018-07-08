@@ -1,4 +1,4 @@
 github "jonkykong/SideMenu" "master"
-github "ViccAlexander/Chameleon" "wip/swift4"
 github "patchthecode/JTAppleCalendar" ~> 7.0
-
+github "Alamofire/Alamofire" ~> 4.7
+github "kiliankoe/iCalKit" "master"

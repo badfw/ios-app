@@ -29,8 +29,6 @@
 		9D300604201047B7005DAF53 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D300603201047B7005DAF53 /* AnnouncementsViewController.swift */; };
 		9D3230DE201579ED00A567F9 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3230DF201579ED00A567F9 /* Chameleon.framework */; };
 		9D3230F8201ADF4600A567F9 /* JTAppleCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3230F9201ADF4600A567F9 /* JTAppleCalendar.framework */; };
-		9D3230FD201AEAB700A567F9 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D3230FC201AEAB700A567F9 /* CalendarCell.xib */; };
-		9D3230FF201AEAE900A567F9 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3230FE201AEAE900A567F9 /* CalendarCell.swift */; };
 		9D37370E1FC6458E00A9C6DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37370D1FC6458E00A9C6DA /* AppDelegate.swift */; };
 		9D3737171FC6458E00A9C6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3737161FC6458E00A9C6DA /* Assets.xcassets */; };
 		9D37371A1FC6458E00A9C6DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3737181FC6458E00A9C6DA /* LaunchScreen.storyboard */; };
@@ -45,6 +43,13 @@
 		9D39DE2D1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D39DE2C1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift */; };
 		9D44B20D20142E5D00D8F452 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D44B20C20142E5D00D8F452 /* UIViewExtensions.swift */; };
 		9D452263205C325000ACDC56 /* iCalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D452264205C325000ACDC56 /* iCalKit.framework */; };
+		9D45226A205C383A00ACDC56 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D452268205C383A00ACDC56 /* EventTableViewCell.xib */; };
+		9D45226B205C383A00ACDC56 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D452269205C383A00ACDC56 /* EventTableViewCell.swift */; };
+		9D45226C205C626B00ACDC56 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D45226D205C626B00ACDC56 /* Alamofire.framework */; };
+		9D57E00820F187CF0014376E /* AdminViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D57E00720F187CF0014376E /* AdminViewController.storyboard */; };
+		9D57E00A20F187E40014376E /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D57E00920F187E40014376E /* AdminViewController.swift */; };
+		9D57E00C20F194650014376E /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D57E00B20F194650014376E /* FirebaseMessaging.framework */; };
+		9D57E00E20F1946A0014376E /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D57E00D20F1946A0014376E /* Protobuf.framework */; };
 		9D6631FD201049A80088C92F /* AnnouncementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D6631FC201049A80088C92F /* AnnouncementTableViewCell.xib */; };
 		9D6631FF201049BF0088C92F /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6631FE201049BF0088C92F /* AnnouncementTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -75,8 +80,6 @@
 		9D300603201047B7005DAF53 /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
 		9D3230DF201579ED00A567F9 /* Chameleon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Chameleon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3230F9201ADF4600A567F9 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D3230FC201AEAB700A567F9 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
-		9D3230FE201AEAE900A567F9 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		9D37370A1FC6458E00A9C6DA /* BADFW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BADFW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D37370D1FC6458E00A9C6DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3737161FC6458E00A9C6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +96,14 @@
 		9D39DE2C1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsViewController.swift; sourceTree = "<group>"; };
 		9D44B20C20142E5D00D8F452 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		9D452264205C325000ACDC56 /* iCalKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iCalKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D452268205C383A00ACDC56 /* EventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		9D452269205C383A00ACDC56 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		9D45226D205C626B00ACDC56 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D57E00520EB2E040014376E /* BADFW.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BADFW.entitlements; sourceTree = "<group>"; };
+		9D57E00720F187CF0014376E /* AdminViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminViewController.storyboard; sourceTree = "<group>"; };
+		9D57E00920F187E40014376E /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		9D57E00B20F194650014376E /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = BADFW/Firebase/Messaging/FirebaseMessaging.framework; sourceTree = "<group>"; };
+		9D57E00D20F1946A0014376E /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = BADFW/Firebase/Messaging/Protobuf.framework; sourceTree = "<group>"; };
 		9D6631FC201049A80088C92F /* AnnouncementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementTableViewCell.xib; sourceTree = "<group>"; };
 		9D6631FE201049BF0088C92F /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D45226C205C626B00ACDC56 /* Alamofire.framework in Frameworks */,
 				9D452263205C325000ACDC56 /* iCalKit.framework in Frameworks */,
 				9D3230F8201ADF4600A567F9 /* JTAppleCalendar.framework in Frameworks */,
 				9D3230DE201579ED00A567F9 /* Chameleon.framework in Frameworks */,
@@ -123,6 +135,8 @@
 				9D3005D9201035DD005DAF53 /* FirebaseAnalytics.framework in Frameworks */,
 				9D3005DA201035DD005DAF53 /* FirebaseNanoPB.framework in Frameworks */,
 				9D3005E420103739005DAF53 /* leveldb-library.framework in Frameworks */,
+				9D57E00C20F194650014376E /* FirebaseMessaging.framework in Frameworks */,
+				9D57E00E20F1946A0014376E /* Protobuf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +185,7 @@
 		9D37370C1FC6458E00A9C6DA /* BADFW */ = {
 			isa = PBXGroup;
 			children = (
+				9D57E00520EB2E040014376E /* BADFW.entitlements */,
 				9D3005E020103650005DAF53 /* Firebase */,
 				9D39DE1A1FC65A8F00CE6BE1 /* Extensions */,
 				9D39DE2E1FC75CBD00CE6BE1 /* Assets */,
@@ -185,6 +200,9 @@
 		9D37372D1FC64C8400A9C6DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D57E00D20F1946A0014376E /* Protobuf.framework */,
+				9D57E00B20F194650014376E /* FirebaseMessaging.framework */,
+				9D45226D205C626B00ACDC56 /* Alamofire.framework */,
 				9D452264205C325000ACDC56 /* iCalKit.framework */,
 				9D3230F9201ADF4600A567F9 /* JTAppleCalendar.framework */,
 				9D3230DF201579ED00A567F9 /* Chameleon.framework */,
@@ -241,10 +259,10 @@
 		9D39DE291FC66CAF00CE6BE1 /* Upcoming Events */ = {
 			isa = PBXGroup;
 			children = (
+				9D452269205C383A00ACDC56 /* EventTableViewCell.swift */,
+				9D452268205C383A00ACDC56 /* EventTableViewCell.xib */,
 				9D39DE2A1FC66CDF00CE6BE1 /* UpcomingEventsViewController.storyboard */,
 				9D39DE2C1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift */,
-				9D3230FC201AEAB700A567F9 /* CalendarCell.xib */,
-				9D3230FE201AEAE900A567F9 /* CalendarCell.swift */,
 			);
 			path = "Upcoming Events";
 			sourceTree = "<group>";
@@ -264,9 +282,19 @@
 				9D39DE261FC66A8200CE6BE1 /* Side Menu */,
 				9D39DE211FC6695700CE6BE1 /* BasePanelViewController.swift */,
 				9D39DE291FC66CAF00CE6BE1 /* Upcoming Events */,
+				9D57E00620F184530014376E /* Admin */,
 				9D39DE231FC66A3600CE6BE1 /* Welcome */,
 			);
 			path = Panels;
+			sourceTree = "<group>";
+		};
+		9D57E00620F184530014376E /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				9D57E00720F187CF0014376E /* AdminViewController.storyboard */,
+				9D57E00920F187E40014376E /* AdminViewController.swift */,
+			);
+			path = Admin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,13 +325,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Souvik Banerjee";
 				TargetAttributes = {
 					9D3737091FC6458E00A9C6DA = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -332,12 +371,13 @@
 			files = (
 				9D39DE251FC66A4C00CE6BE1 /* WelcomeViewController.storyboard in Resources */,
 				9D37371A1FC6458E00A9C6DA /* LaunchScreen.storyboard in Resources */,
-				9D3230FD201AEAB700A567F9 /* CalendarCell.xib in Resources */,
 				9D39DE2B1FC66CDF00CE6BE1 /* UpcomingEventsViewController.storyboard in Resources */,
 				9D3737171FC6458E00A9C6DA /* Assets.xcassets in Resources */,
 				9D6631FD201049A80088C92F /* AnnouncementTableViewCell.xib in Resources */,
 				9D39DE1E1FC65AE100CE6BE1 /* SideMenuViewController.storyboard in Resources */,
 				9D3005FB201042B3005DAF53 /* GoogleService-Info.plist in Resources */,
+				9D57E00820F187CF0014376E /* AdminViewController.storyboard in Resources */,
+				9D45226A205C383A00ACDC56 /* EventTableViewCell.xib in Resources */,
 				9D300602201047A6005DAF53 /* AnnouncementsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D57E00A20F187E40014376E /* AdminViewController.swift in Sources */,
 				9D6631FF201049BF0088C92F /* AnnouncementTableViewCell.swift in Sources */,
 				9D300604201047B7005DAF53 /* AnnouncementsViewController.swift in Sources */,
 				9D39DE201FC65B0100CE6BE1 /* SideMenuViewController.swift in Sources */,
@@ -373,8 +414,8 @@
 				9D39DE221FC6695700CE6BE1 /* BasePanelViewController.swift in Sources */,
 				9D39DE1C1FC65AB100CE6BE1 /* UIViewControllerExtensions.swift in Sources */,
 				9D44B20D20142E5D00D8F452 /* UIViewExtensions.swift in Sources */,
+				9D45226B205C383A00ACDC56 /* EventTableViewCell.swift in Sources */,
 				9D37370E1FC6458E00A9C6DA /* AppDelegate.swift in Sources */,
-				9D3230FF201AEAE900A567F9 /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +447,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -413,6 +455,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -464,6 +507,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -471,6 +515,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -506,18 +551,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BADFW/BADFW.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J49BFWP8H6;
+				DEVELOPMENT_TEAM = QUC4F78HP5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BADFW/Firebase/Database",
 					"$(PROJECT_DIR)/BADFW/Firebase/Analytics",
+					"$(PROJECT_DIR)/BADFW/Firebase/Messaging",
 				);
 				INFOPLIST_FILE = BADFW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = me.souvik.BADFW;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.souvik.BADFW-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BADFW/BADFW-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -531,18 +580,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BADFW/BADFW.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J49BFWP8H6;
+				DEVELOPMENT_TEAM = QUC4F78HP5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BADFW/Firebase/Database",
 					"$(PROJECT_DIR)/BADFW/Firebase/Analytics",
+					"$(PROJECT_DIR)/BADFW/Firebase/Messaging",
 				);
 				INFOPLIST_FILE = BADFW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = me.souvik.BADFW;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.souvik.BADFW-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BADFW/BADFW-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

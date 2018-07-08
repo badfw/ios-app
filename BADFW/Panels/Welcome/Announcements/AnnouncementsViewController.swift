@@ -22,7 +22,7 @@ class AnnouncementsViewController : UITableViewController {
                 NSLog("failed to cast snapshot")
                 return
             }
-            self.announcements = announcements.flatMap({ (keyObject, announcementObject) -> Announcement? in
+            self.announcements = announcements.compactMap({ (keyObject, announcementObject) -> Announcement? in
                 guard let announcement = announcementObject as? [String: String] else {
                     return nil
                 }

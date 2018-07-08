@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-@IBDesignable class AnnouncementTableViewCell : UITableViewCell {
-    public static let reuseIdentifier = "AnnouncementTableViewCell"
+@IBDesignable class EventTableViewCell : UITableViewCell {
+    public static let reuseIdentifier = "EventTableViewCell"
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
@@ -83,7 +83,7 @@ import UIKit
     }
 }
 
-class AnnouncementTableViewCellShadowView : UIView {
+class EventTableViewCellShadowView : UIView {
     override var bounds: CGRect {
         didSet {
             setupShadow()
