@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact View Controller-->
+        <scene sceneID="KKg-EQ-vWV">
+            <objects>
+                <viewController storyboardIdentifier="ContactViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IVS-zz-vXq" customClass="ContactViewController" customModule="BADFW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ezb-4E-Fr1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ContactInfoImage" translatesAutoresizingMaskIntoConstraints="NO" id="IkP-PT-Wa8">
+                                <rect key="frame" x="8" y="75" width="359" height="194"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="570-6h-jwY">
+                                <rect key="frame" x="52.5" y="616.5" width="270.5" height="42.5"/>
+                                <string key="text">Copyright (c) 2018 Souvik Banerjee
+All rights reserved.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IkP-PT-Wa8" firstAttribute="centerY" secondItem="GSo-ij-D7Y" secondAttribute="centerY" multiplier="0.5" id="9vc-Ss-13i"/>
+                            <constraint firstItem="IkP-PT-Wa8" firstAttribute="leading" secondItem="GSo-ij-D7Y" secondAttribute="leading" constant="8" id="LIP-CD-bcb"/>
+                            <constraint firstItem="GSo-ij-D7Y" firstAttribute="trailing" secondItem="IkP-PT-Wa8" secondAttribute="trailing" constant="8" id="Uke-tR-XCV"/>
+                            <constraint firstItem="570-6h-jwY" firstAttribute="centerX" secondItem="GSo-ij-D7Y" secondAttribute="centerX" id="f21-Q5-SQ6"/>
+                            <constraint firstItem="GSo-ij-D7Y" firstAttribute="bottom" secondItem="570-6h-jwY" secondAttribute="bottom" constant="8" id="jVq-Lk-RMM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GSo-ij-D7Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="IkP-PT-Wa8" id="oUY-kd-Vun"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xdj-N4-CoV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="191.1544227886057"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ContactInfoImage" width="300" height="194"/>
+    </resources>
+</document>

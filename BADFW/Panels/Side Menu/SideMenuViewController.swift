@@ -15,9 +15,17 @@ class SideMenuViewController : UITableViewController {
     var welcomeViewController: WelcomeViewController?
     var upcomingEventsViewController: UpcomingEventsViewController?
     var adminViewController: AdminViewController?
+    var contactViewController: ContactViewController?
 
+    @IBOutlet weak var adminViewControllerCell: UITableViewCell!
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        let defaults = UserDefaults.standard
+        if defaults.bool(forKey: "adminEnabled") {
+            adminViewControllerCell.isHidden = false
+        } else {
+            adminViewControllerCell.isHidden = true
+        }
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
@@ -35,7 +43,7 @@ class SideMenuViewController : UITableViewController {
                 case 1: // Upcoming Events
                     self.associatedNavigationController?.setViewControllers([self.upcomingEventsViewController!], animated: false)
                 case 2: // Contact
-                    print("Contact unimplemented")
+                    self.associatedNavigationController?.setViewControllers([self.contactViewController!], animated: false)
                 case 3:
                     self.associatedNavigationController?.setViewControllers([self.adminViewController!], animated: false)
                 default:

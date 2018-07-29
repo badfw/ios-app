@@ -37,7 +37,7 @@ class AdminViewController : BasePanelViewController {
     @IBAction func buttonPressed(_ sender: Any) {
         self.textView.resignFirstResponder()
         self.setEditing(false, animated: true)
-    UIApplication.shared.sendAction(#selector(resignFirstResponder), to: nil, from: nil, for: nil)
+        UIApplication.shared.sendAction(#selector(resignFirstResponder), to: nil, from: nil, for: nil)
 
     }
 }

@@ -31,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             sideMenu.welcomeViewController = welcomeViewController
             sideMenu.upcomingEventsViewController = UpcomingEventsViewController.instantiateFromStoryboard()
             sideMenu.adminViewController = AdminViewController.instantiateFromStoryboard()
+            sideMenu.contactViewController = ContactViewController.instantiateFromStoryboard()
+            sideMenu.contactViewController?.sideMenuViewController = sideMenu
             SideMenuManager.default.menuLeftNavigationController = UISideMenuNavigationController(rootViewController: sideMenu)
             /*
             Side menu customization

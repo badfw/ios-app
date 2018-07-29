@@ -50,6 +50,8 @@
 		9D57E00A20F187E40014376E /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D57E00920F187E40014376E /* AdminViewController.swift */; };
 		9D57E00C20F194650014376E /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D57E00B20F194650014376E /* FirebaseMessaging.framework */; };
 		9D57E00E20F1946A0014376E /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D57E00D20F1946A0014376E /* Protobuf.framework */; };
+		9D57E011210439C60014376E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D57E010210439C60014376E /* ContactViewController.swift */; };
+		9D57E013210439D40014376E /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D57E012210439D40014376E /* ContactViewController.storyboard */; };
 		9D6631FD201049A80088C92F /* AnnouncementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D6631FC201049A80088C92F /* AnnouncementTableViewCell.xib */; };
 		9D6631FF201049BF0088C92F /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6631FE201049BF0088C92F /* AnnouncementTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -104,6 +106,8 @@
 		9D57E00920F187E40014376E /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		9D57E00B20F194650014376E /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = BADFW/Firebase/Messaging/FirebaseMessaging.framework; sourceTree = "<group>"; };
 		9D57E00D20F1946A0014376E /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = BADFW/Firebase/Messaging/Protobuf.framework; sourceTree = "<group>"; };
+		9D57E010210439C60014376E /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		9D57E012210439D40014376E /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
 		9D6631FC201049A80088C92F /* AnnouncementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnnouncementTableViewCell.xib; sourceTree = "<group>"; };
 		9D6631FE201049BF0088C92F /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -279,6 +283,7 @@
 		9D3BCFAA1FC656BF00FBD667 /* Panels */ = {
 			isa = PBXGroup;
 			children = (
+				9D57E00F210439A30014376E /* Contact */,
 				9D39DE261FC66A8200CE6BE1 /* Side Menu */,
 				9D39DE211FC6695700CE6BE1 /* BasePanelViewController.swift */,
 				9D39DE291FC66CAF00CE6BE1 /* Upcoming Events */,
@@ -295,6 +300,15 @@
 				9D57E00920F187E40014376E /* AdminViewController.swift */,
 			);
 			path = Admin;
+			sourceTree = "<group>";
+		};
+		9D57E00F210439A30014376E /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				9D57E010210439C60014376E /* ContactViewController.swift */,
+				9D57E012210439D40014376E /* ContactViewController.storyboard */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +391,7 @@
 				9D39DE1E1FC65AE100CE6BE1 /* SideMenuViewController.storyboard in Resources */,
 				9D3005FB201042B3005DAF53 /* GoogleService-Info.plist in Resources */,
 				9D57E00820F187CF0014376E /* AdminViewController.storyboard in Resources */,
+				9D57E013210439D40014376E /* ContactViewController.storyboard in Resources */,
 				9D45226A205C383A00ACDC56 /* EventTableViewCell.xib in Resources */,
 				9D300602201047A6005DAF53 /* AnnouncementsViewController.storyboard in Resources */,
 			);
@@ -410,6 +425,7 @@
 				9D300604201047B7005DAF53 /* AnnouncementsViewController.swift in Sources */,
 				9D39DE201FC65B0100CE6BE1 /* SideMenuViewController.swift in Sources */,
 				9D39DE2D1FC66CF700CE6BE1 /* UpcomingEventsViewController.swift in Sources */,
+				9D57E011210439C60014376E /* ContactViewController.swift in Sources */,
 				9D39DE281FC66B0000CE6BE1 /* WelcomeViewController.swift in Sources */,
 				9D39DE221FC6695700CE6BE1 /* BasePanelViewController.swift in Sources */,
 				9D39DE1C1FC65AB100CE6BE1 /* UIViewControllerExtensions.swift in Sources */,

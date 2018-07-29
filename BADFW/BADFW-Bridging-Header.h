@@ -3,3 +3,4 @@
 //
 
 #import "Firebase.h"
+#import <CommonCrypto/CommonHMAC.h>
